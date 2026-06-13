@@ -1,0 +1,15 @@
+{
+   "background": {
+      "service_worker": "rotten_tomatoes.js"
+   },
+   "description": "Recherchez rapidement du texte en surbrillance sur Allociné en cliquant avec le bouton droit de la souris",
+   "icons": {
+      "16": "rotten_tomatoes_16.png",
+      "48": "rotten_tomatoes_48.png"
+   },
+   "manifest_version": 3,
+   "name": "Rechercher-cliquer Droit-Click Rotten Tomatoe",
+   "permissions": [ "contextMenus", "notifications", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
