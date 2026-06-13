@@ -21,7 +21,7 @@ chrome.runtime.onMessage.addListener( data => {
 chrome.runtime.onInstalled.addListener( () => {
   chrome.contextMenus.create({
     id: 'notify',
-	title: "Recherchez Rotten Tomatoes pour '%s'",
+	title: "Recherchez Wikipedia pour '%s'",
 	contexts: [ "selection" ]
   });
 });
@@ -35,7 +35,7 @@ chrome.contextMenus.onClicked.addListener( ( info, tab ) => {
 function doSearch (search_target,tab)
 {
 	chrome.tabs.create( {
-		url : "https://www.rottentomatoes.com/search?search="+encodeURIComponent(search_target),
+		url : "https://en.wikipedia.org/wiki/"+encodeURIComponent(search_target),
 		selected : true,
 		index : tab.index + 1
 	} );
